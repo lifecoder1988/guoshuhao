@@ -1,0 +1,31 @@
+部署步骤
+
+1. 云环境准备
+
+- 创建 新环境 ， 拿到 envId
+
+- 创建数据库 coupon 和 jwt
+
+- 同步 serverless 代码到 env
+
+- 本地启动云函数服务, 插入 coupon
+  {type : addCoupon}
+
+2. 小程序部署
+
+- 修改 envList 文件 ， 主要是 envId
+- 部署小程序
+
+3. jwt 更新
+
+- store_guoshuhao_jwt.js 中常亮替换
+- QX APP 中 更新脚本
+- 启动官方小程序做一次 jwt 更新
+  - 记得要设置启动 rewrite 功能
+
+4. 体验
+
+- 在数据库中找一个 code
+- 在小程序中绑定这个 code
+
+5. 提交审核，发布生产
